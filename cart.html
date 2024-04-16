@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .cart-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            display: inline-block;
+        }
+        .cart-item img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .cart-item-info {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+        .cart-item-info h2 {
+            margin: 0;
+        }
+        .cart-item-info p {
+            margin: 5px 0;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cart-items"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        // Call displayCart() when the page loads to display cart items
+        document.addEventListener('DOMContentLoaded', function() {
+            displayCart();
+        });
+    </script>
+</body>
+</html>

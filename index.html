@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for better UI */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f1c40f; /* Change to your preferred hover color */
+        }
+        main {
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .product-card .product-info {
+            padding: 20px;
+        }
+        .product-card h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .product-card p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #888;
+        }
+        .product-card button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f1c40f; /* Change to your preferred button color */
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card button:hover {
+            background-color: #e2b607; /* Change to your preferred hover button color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sariga Cosmetics</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products" style="margin-top: 100px;">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="./images/product11.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h2>Body lotion</h2>
+                    <p>$400</p>
+                    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./images/product2.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h2>Nykka nail polish</h2>
+                    <p>$230</p>
+                    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./images/product3.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h2>Reddish lip color</h2>
+                    <p>$260</p>
+                    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./images/product4.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h2>Nykka lipstick</h2>
+                    <p>$30</p>
+                    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2, Product 3, ... -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sarigama E-commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html> 
